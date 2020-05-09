@@ -10,6 +10,5 @@
     grid-template-columns: 3fr 1fr 1fr 1fr;
     color: #D0E271;
     align-self: center;
-    justify-self: center;
-    font-size: 100px;
+    justify-self: left;
 }

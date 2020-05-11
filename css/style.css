@@ -1,14 +1,39 @@
+html{
+    background: #609E98;
+}
 .grid{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(50px,auto);
-    background: #609E98
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
 }
 .header{
-    grid-column: 1/12;
+    grid-column: 1/13;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     color: #D0E271;
-    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 30px;
+}
+#name{
+    font-size: 2rem;
+    border: 2px solid #D0E271;
+    justify-self: start;
+    padding: 10px;
+    margin-left: 10px;
+}
+.header a{
+    color: #D0E271;
+    text-decoration: none;
     justify-self: center;
+}
+
+.socialmedia img{
+    width: 27%;
+    height: auto;
+}
+p {
+    size: 30px;
 }

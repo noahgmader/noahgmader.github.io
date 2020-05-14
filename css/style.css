@@ -1,6 +1,9 @@
 html{
     background: #609E98;
 }
+body{
+    font-size: 100%;
+}
 .grid{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
@@ -28,12 +31,43 @@ html{
     color: #D0E271;
     text-decoration: none;
     justify-self: center;
+    align-self: center;
 }
-
 .socialmedia img{
     width: 27%;
     height: auto;
+    border-radius: 50%;
+    filter: grayscale(100%)
 }
-p {
-    size: 30px;
+.socialmedia img:hover{
+    width: 27%;
+    height: auto;
+    border-radius: 50%;
+    filter: grayscale(0%);
+}
+.hoverUnderline:hover{
+    padding-bottom: 0px;
+    border-bottom: .1em dotted;
+}
+#me img{
+    width: 100%;
+}
+#me{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+#greeting{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    justify-self: center;
+    position: relative;
+    top: 20%;
+    font-size: 2em;
+    color: #000
+}
+.aboutme{
+    grid-column: 5/10;
+    grid-row: 2/3;
+    position: relative;
+    top: 20%;
 }

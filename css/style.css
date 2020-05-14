@@ -19,6 +19,7 @@ body{
     font-size: 1.3rem;
     font-weight: 500;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 #name{
     font-size: 2rem;
@@ -74,6 +75,23 @@ body{
 .resume{
     grid-column: 1/13;
 }
-.resume h1{
+.align-center{
     text-align: center;
+}
+.align-left{
+    text-align: start;
+    margin: 20px;
+}
+.italicize{
+    font-style: italic;
+}
+.grid .resume:nth-child(even){
+    background: rgb(85, 138, 132);
+}
+.badges img{
+    width: 4%;
+    vertical-align: middle;
+}
+.badges h3{
+    display: inline-block;
 }

@@ -71,3 +71,6 @@ body{
     position: relative;
     top: 20%;
 }
+.resume{
+    grid-column: 1/13
+}

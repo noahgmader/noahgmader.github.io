@@ -72,5 +72,8 @@ body{
     top: 20%;
 }
 .resume{
-    grid-column: 1/13
+    grid-column: 1/13;
+}
+.resume h1{
+    text-align: center;
 }

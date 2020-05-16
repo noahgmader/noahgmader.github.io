@@ -95,3 +95,7 @@ body{
 .badges h3{
     display: inline-block;
 }
+.row{
+    grid-column: 1/13;
+    justify-self: center;
+}

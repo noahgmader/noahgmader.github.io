@@ -40,7 +40,3 @@ export function detectCollisionX(ball, gameObject) {
     return false;
   }
 }
-
-//export function detectCollisionY(ball, gameObject) {
-
-//}

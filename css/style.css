@@ -99,12 +99,19 @@ body{
     grid-column: 1/13;
     justify-self: center;
 }
-#gameScreen {
-    border: 1px solid black;
-}
 .game{
     grid-column: 2/5;
 }
 .game img{
     display: none;
+}
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: #609E98
+}
+.navbar-padding {
+    padding-top: 100px;
 }

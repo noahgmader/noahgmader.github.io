@@ -1,4 +1,4 @@
-import { detectCollisionY, detectCollisionX } from "collisionDetection.js";
+import { detectCollisionY, detectCollisionX } from "./collisionDetection.js";
 
 export default class Bricks {
   constructor(game, position) {
@@ -7,8 +7,8 @@ export default class Bricks {
     this.game = game;
 
     this.position = position;
-    this.width = 40;
-    this.height = 40;
+    this.width = 20;
+    this.height = 20;
 
     this.markedForDeletion = false;
   }

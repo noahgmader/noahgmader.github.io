@@ -99,8 +99,8 @@ body{
     grid-column: 1/13;
     justify-self: center;
 }
-#gameScreen{
-    border: 1px solid #D0E271;
+.game{
+    grid-column: 2/5;
 }
 .game img{
     display: none;

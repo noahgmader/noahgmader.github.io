@@ -5,7 +5,7 @@ export default class Paddle {
     this.width = 150;
     this.height = 20;
 
-    this.maxSpeed = 7;
+    this.maxSpeed = 20;
     this.speed = 0;
 
     this.position = {
@@ -27,7 +27,7 @@ export default class Paddle {
   }
 
   draw(ctx) {
-    ctx.fillStyle = "#0ff";
+    ctx.fillStyle = "#D0E271";
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
 

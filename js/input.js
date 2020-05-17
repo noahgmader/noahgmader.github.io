@@ -2,6 +2,10 @@ export default class InputHandler {
   constructor(paddle, game) {
     document.addEventListener("keydown", event => {
       switch (event.keyCode) {
+        case 32:
+          game.togglePause();
+          break;
+      
         case 37:
           paddle.moveLeft();
           break;
@@ -10,12 +14,11 @@ export default class InputHandler {
           paddle.moveRight();
           break;
 
-        case 32:
-          game.togglePause();
-          break;
+        case 82:
+          game.restart();
 
         case 83:
-          game.start();
+          game.run();
           break;
       }
     });

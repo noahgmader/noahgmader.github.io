@@ -1,4 +1,4 @@
-import { detectCollisionY } from "collisionDetection.js";
+import { detectCollisionY } from "./collisionDetection.js";
 
 export default class Ball {
   constructor(game) {
@@ -7,11 +7,11 @@ export default class Ball {
     this.gameWidth = game.gameWidth;
     this.gameHeight = game.gameHeight;
     this.game = game;
-    this.size = 32;
+    this.size = 24;
   }
 
   reset() {
-    this.position = { x: 10, y: 396 };
+    this.position = { x: 10, y: 300 }; //also change reset() function in game class
     this.speed = { x: 10, y: -10 };
   }
 

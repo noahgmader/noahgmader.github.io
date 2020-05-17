@@ -14,13 +14,21 @@ export default class Bricks {
   }
 
   update() {
+    let collisionY = false;
+    let collisionX = false;
     if (detectCollisionY(this.game.ball, this)) {
-      this.game.ball.speed.y = -this.game.ball.speed.y;
+      collisionY = true;
       this.markedForDeletion = true;
     }
     if (detectCollisionX(this.game.ball, this)) {
-      this.game.ball.speed.x = -this.game.ball.speed.x;
+      collisionX = true;
       this.markedForDeletion = true;
+    }
+    if (collisionY) {
+        this.game.ball.speed.y = -this.game.ball.speed.y;
+    }
+    if (collisionX) {
+        this.game.ball.speed.x = -this.game.ball.speed.x;
     }
   }
 
